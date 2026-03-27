@@ -9,6 +9,7 @@ a { color: inherit; text-decoration: none; display: block; }
 
 img { object-fit: cover; width: 100%; display: block;}
 
+body { background-color: #fff; color: #333 ;}
 /* * { border: 1px solid gray;} */
 
 /* 헤더 시작 */
@@ -126,10 +127,42 @@ img { object-fit: cover; width: 100%; display: block;}
 /* 바로가기 */
 .go { 
     height: 100px; 
-    background-color: blue;
+    background-color: rgb(34, 58, 105);
     position: absolute;
     width: 100%;
     top: -100px; left:0;
+}
+
+.go > ul {
+    display: flex;
+    height: 100%;
+}
+
+.go > ul > li {
+    flex-grow: 1;
+    height: 100%;
+}
+
+.go > ul > li:nth-child(2n) {
+    background-color: rgb(39, 40, 42);
+}
+
+.go > ul > li > a {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.go > ul > li > a > img {
+    width: 60px; height: 60px;
+}
+
+.go > ul > li > a > span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFF;
 }
 
 .banner { height: 200px; background-color: skyblue;}
